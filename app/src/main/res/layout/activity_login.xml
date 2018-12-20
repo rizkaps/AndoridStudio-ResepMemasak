@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB"
+    tools:context="com.example.windows10.yukmasak.Login">
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/homelogo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:onClick="Home"
+        />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logoberanda"/>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#DB7093">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp">
+
+         <ImageView
+             android:layout_width="150dp"
+             android:layout_height="40dp"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="25dp"
+             android:src="@drawable/loginkata"
+             />
+
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="315dp"
+            android:layout_marginTop="90dp"
+            android:background="#FFC0CB">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:id="@+id/relativeLayout">
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="70dp"
+                   android:layout_marginTop="10dp"
+                   android:src="@drawable/loginlogo"
+                   android:layout_marginLeft="105dp"/>
+
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_centerHorizontal="true"
+                android:hint=" Username"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/inputUsername"
+                android:layout_centerHorizontal="true"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/inputPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/holo_orange_light"
+                android:textColor="#fff"
+                android:text="LOGIN" />
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="430dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:text="Belum punya akun?"
+            />
+
+        <Button
+            android:id="@+id/daftar"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="450dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_orange_light"
+            android:textColor="#fff"
+            android:text="DAFTAR"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

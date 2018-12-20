@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DB7093"
+    tools:context="com.example.windows10.yukmasak.MainActivity">
+
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:rotation="-20"
+        android:src="@drawable/bowl" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="140dp"
+        android:rotation="-20"
+        android:src="@drawable/sushi" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="260dp"
+        android:src="@drawable/noodle" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/font_opening" />
+
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="240dp"
+        android:src="@drawable/logoberanda" />
+
+
+    <Button
+        android:onClick="next"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/buttonnext" />
+
+
+
+</RelativeLayout>

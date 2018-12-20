@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DB7093"
+    tools:context="com.example.windows10.yukmasak.Diarymasak">
+
+    <Button
+        android:id="@+id/btnhome"
+        android:onClick="home"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/homelogo" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="320dp"
+        android:src="@drawable/logoberanda"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="DIARY RESEPKU"
+        android:textColor="#FFFF33"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#FFC0CB">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/button2">
+            </ListView>
+            <Button
+                android:id="@+id/button2"
+                android:onClick="Buatresep"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="20dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:drawableLeft="@drawable/diaryinsertlogo"
+                android:text="Catat resep baru"
+                android:textSize="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

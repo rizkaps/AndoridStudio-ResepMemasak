@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB"
+    tools:context="com.example.windows10.yukmasak.Register">
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backlogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:onClick="Back"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="330dp"
+        android:src="@drawable/logoberanda"/>
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#DB7093">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/textpendaftaran"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:text="PENDAFTARAN"
+                android:textSize="30dp"
+                android:textColor="#FFFF33"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textpendaftaran"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint=" Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/inputEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint=" Username"
+                android:inputType="text"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/inputUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/inputPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/btnDaftar"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="420dp"
+                android:background="@android:color/holo_orange_light"
+                android:textColor="#fff"
+                android:text="DAFTAR" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

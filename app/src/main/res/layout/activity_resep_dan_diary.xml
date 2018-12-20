@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DB7093"
+    tools:context="com.example.windows10.yukmasak.ResepDanDiary">
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#FFC0CB">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/selamatdatang"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:src="@drawable/logoberanda"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Yuk, mulai memasak !"/>
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="100dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text=" Dan catat resepnya "/>
+
+
+            <Button
+                android:id="@+id/resep"
+                android:onClick="resep"
+                android:layout_width="210dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="235dp"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="#FFFF33"
+                android:text="RESEP"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="235dp"
+                android:src="@drawable/reseplogo"/>
+
+            <Button
+                android:layout_width="210dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="330dp"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="diarymasak"
+                android:text="DIARY MASAK"
+                android:textColor="#FFFF33"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginTop="325dp"
+                android:src="@drawable/diarymasaklogo"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:onClick="Exit"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="440dp"
+                android:background="@drawable/exitlogo"
+                android:textStyle="italic"
+                android:text="EXIT" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
